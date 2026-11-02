@@ -10,7 +10,9 @@ Parcours de 2 semaines pour apprendre React.js, de zéro jusqu'à une plateforme
 ## Avancement
 - [x] Jour 1 : projet Vite, Header, Main, Footer, Badge
 - [x] Jour 2 : props, listes avec map(), cartes d'étudiants
-- [ ] Jour 3 : useState, formulaires, gestionnaire de tâches
+- [x] Jour 3 : useState, formulaires, gestionnaire de tâches
+- [x] Jour 4 : CRUD étudiants, recherche, LocalStorage
+- [x] Jour 5 : finalisation du Mini-projet B
 
 ## Installation et lancement
 ```bash

@@ -1,10 +1,10 @@
 import Badge from "./Badge";
 import StudentCard from "./StudentCard";
-import students from "../data/students"; // ../ = on remonte d'un dossier
 import Counter from "./Counter";
 import ContactForm from "./ContactForm";
 import TaskManager from "./TaskManager";
 import StudentManager from "./StudentManager";
+import students from "../data/students";
 
 function Main() {
   return (
@@ -16,12 +16,12 @@ function Main() {
       <Badge texte="Populaire" />
       <Badge texte="Gratuit" />
 
+      {/* Jour 2 : cartes d'étudiants */}
       <h2 className="titre-section">Nos étudiants</h2>
       <div className="liste-cartes">
-        {/* map() parcourt le tableau : une carte par étudiant */}
         {students.map((etudiant) => (
           <StudentCard
-            key={etudiant.id}          // clé unique obligatoire
+            key={etudiant.id}
             nom={etudiant.nom}
             prenom={etudiant.prenom}
             email={etudiant.email}
@@ -31,11 +31,18 @@ function Main() {
           />
         ))}
       </div>
-      <h2 className="titre-section">Exercices du Jour 3</h2>
+
+      {/* Mini-projet A */}
+      <h2 className="titre-section">Mini-projet A : Gestionnaire de tâches</h2>
+      <TaskManager />
+
+      {/* Mini-projet B (son titre est dans le component) */}
+      <StudentManager />
+
+      {/* Exercices du Jour 3 */}
+      <h2 className="titre-section">Exercices</h2>
       <Counter />
       <ContactForm />
-      <TaskManager />
-      <StudentManager />
     </main>
   );
 }

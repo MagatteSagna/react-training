@@ -1,5 +1,5 @@
-// Props : la liste à afficher + deux fonctions du parent
-function StudentList({ etudiants, onModifier, onSupprimer }) {
+// Props : la liste à afficher + trois fonctions du parent
+function StudentList({ etudiants, onModifier, onSupprimer, onDetails }) {
   // Rendu conditionnel : message si la liste est vide
   if (etudiants.length === 0) {
     return <p className="vide">Aucun étudiant à afficher.</p>;
@@ -27,6 +27,8 @@ function StudentList({ etudiants, onModifier, onSupprimer }) {
               <td>{e.niveau}</td>
               <td>{e.statut}</td>
               <td>
+                {/* Nouveau bouton : appelle onDetails avec l'étudiant de cette ligne */}
+                <button onClick={() => onDetails(e)}>Détails</button>
                 <button onClick={() => onModifier(e)}>Modifier</button>
                 <button
                   onClick={() => {
