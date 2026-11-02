@@ -1,16 +1,24 @@
-# React + Vite
+# Formation React intensive : projet de stage
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Parcours de 2 semaines pour apprendre React.js, de zéro jusqu'à une plateforme e-learning front-end.
 
-Currently, two official plugins are available:
+## Technologies
+- React, Vite, JavaScript ES6+
+- HTML5, CSS3
+- React Router (à venir), Git/GitHub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Avancement
+- [x] Jour 1 : projet Vite, Header, Main, Footer, Badge
+- [x] Jour 2 : props, listes avec map(), cartes d'étudiants
+- [ ] Jour 3 : useState, formulaires, gestionnaire de tâches
 
-## React Compiler
+## Installation et lancement
+```bash
+git clone https://github.com/MagatteSagna/react-training.git
+cd react-training
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Auteur
+Magatte Sagna
