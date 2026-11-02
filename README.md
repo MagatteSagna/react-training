@@ -1,4 +1,4 @@
-# Formation React intensive : projet de stage
+# Formation React intensive : projet de front-end
 
 Parcours de 2 semaines pour apprendre React.js, de zéro jusqu'à une plateforme e-learning front-end.
 

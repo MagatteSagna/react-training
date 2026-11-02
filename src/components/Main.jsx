@@ -1,6 +1,9 @@
 import Badge from "./Badge";
 import StudentCard from "./StudentCard";
 import students from "../data/students"; // ../ = on remonte d'un dossier
+import Counter from "./Counter";
+import ContactForm from "./ContactForm";
+import TaskManager from "./TaskManager";
 
 function Main() {
   return (
@@ -13,7 +16,6 @@ function Main() {
       <Badge texte="Gratuit" />
 
       <h2 className="titre-section">Nos étudiants</h2>
-
       <div className="liste-cartes">
         {/* map() parcourt le tableau : une carte par étudiant */}
         {students.map((etudiant) => (
@@ -28,6 +30,10 @@ function Main() {
           />
         ))}
       </div>
+      <h2 className="titre-section">Exercices du Jour 3</h2>
+      <Counter />
+      <ContactForm />
+      <TaskManager />
     </main>
   );
 }

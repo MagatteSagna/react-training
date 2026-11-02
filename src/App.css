@@ -131,3 +131,104 @@ body {
   padding-top: 10px;
   border-top: 1px dashed var(--rose);
 }
+
+.bloc {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--rose-clair);
+  border: 2px solid var(--rose);
+  border-radius: 12px;
+}
+
+.bloc h3 {
+  color: var(--rouge);
+  margin-bottom: 12px;
+}
+
+.bloc input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid var(--rose);
+  border-radius: 8px;
+  background-color: var(--blanc);
+  color: var(--texte);
+}
+
+.bloc button {
+  background-color: var(--rouge);
+  color: var(--blanc);
+  border: none;
+  padding: 8px 14px;
+  margin: 3px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bloc button:hover {
+  background-color: var(--rouge-fonce);
+}
+
+.ligne {
+  display: flex;
+  gap: 8px;
+}
+
+.ligne input {
+  margin-bottom: 0;
+}
+
+.erreur {
+  color: var(--rouge-fonce);
+  font-weight: bold;
+}
+
+.succes {
+  color: var(--rouge);
+  font-weight: bold;
+}
+
+.liste-taches {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.liste-taches li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blanc);
+  border: 1px solid var(--rose);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+
+.liste-taches li span:first-child {
+  cursor: pointer;
+}
+
+.barree {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.bloc textarea {
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid var(--rose);
+  border-radius: 8px;
+  background-color: var(--blanc);
+  color: var(--texte);
+  font-family: Arial, sans-serif;
+}
+
+.filtres {
+  margin: 12px 0;
+}
