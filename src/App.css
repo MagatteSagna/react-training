@@ -35,6 +35,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;   
+  gap: 10px;  
 }
 
 .header nav a {
@@ -42,6 +44,7 @@ body {
   margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .header nav a:hover {
@@ -80,4 +83,51 @@ body {
   font-size: 14px;
   font-weight: bold;
   margin: 4px;
+}
+
+.titre-section {
+  margin-top: 40px;
+}
+
+/* Grille : les cartes se placent automatiquement et passent à la ligne */
+.liste-cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto 0;
+}
+
+.card {
+  background-color: var(--rose-clair);
+  border: 2px solid var(--rose);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  color: var(--rouge);
+  margin-bottom: 6px;
+}
+
+.card button {
+  margin-top: 12px;
+  background-color: var(--rouge);
+  color: var(--blanc);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card button:hover {
+  background-color: var(--rouge-fonce);
+}
+
+.details {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--rose);
 }

@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="header">
-      <h1>Projet Stage de Magatte</h1>
+      <h1>Projet front-end de Magatte</h1>
       <nav>
         <a href="#">Accueil</a>
         <a href="#">Formations</a>

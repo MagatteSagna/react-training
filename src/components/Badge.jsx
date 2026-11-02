@@ -1,11 +1,5 @@
-// Un component (composant) = une fonction avec une majuscule qui retourne du JSX
-function Badge() {
-  return (
-    <span className="badge">
-      Nouveau
-    </span>
-  );
+function Badge({ texte }) {
+  return <span className="badge">{texte}</span>;
 }
 
-// export default = rendre le component utilisable dans les autres fichiers
 export default Badge;
