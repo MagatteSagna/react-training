@@ -4,6 +4,7 @@ import students from "../data/students"; // ../ = on remonte d'un dossier
 import Counter from "./Counter";
 import ContactForm from "./ContactForm";
 import TaskManager from "./TaskManager";
+import StudentManager from "./StudentManager";
 
 function Main() {
   return (
@@ -34,6 +35,7 @@ function Main() {
       <Counter />
       <ContactForm />
       <TaskManager />
+      <StudentManager />
     </main>
   );
 }

@@ -232,3 +232,86 @@ body {
 .filtres {
   margin: 12px 0;
 }
+
+.bloc-large {
+  max-width: 700px;
+}
+
+.bloc select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid var(--rose);
+  border-radius: 8px;
+  background-color: var(--blanc);
+  color: var(--texte);
+}
+
+.bloc-large-conteneur {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.outils {
+  display: flex;
+  gap: 10px;
+  max-width: 700px;
+  margin: 20px auto 10px;
+}
+
+.outils input,
+.outils select {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid var(--rose);
+  border-radius: 8px;
+  background-color: var(--blanc);
+  color: var(--texte);
+}
+
+.tableau-conteneur {
+  overflow-x: auto;   /* défilement horizontal sur petit écran */
+  margin-top: 15px;
+}
+
+.tableau {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--blanc);
+}
+
+.tableau th {
+  background-color: var(--rouge);
+  color: var(--blanc);
+  padding: 10px;
+}
+
+.tableau td {
+  padding: 10px;
+  border-bottom: 1px solid var(--rose);
+}
+
+.tableau tr:hover td {
+  background-color: var(--rose-clair);
+}
+
+.tableau button {
+  background-color: var(--rouge);
+  color: var(--blanc);
+  border: none;
+  padding: 6px 10px;
+  margin: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tableau button:hover {
+  background-color: var(--rouge-fonce);
+}
+
+.vide {
+  margin-top: 20px;
+  font-weight: bold;
+}
