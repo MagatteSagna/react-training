@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.main {
+  flex: 1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.badge {
+  display: inline-block;          /* permet d'avoir un cadre autour du texte */
+  background-color: #16a34a;      /* fond vert */
+  color: white;                   /* texte blanc */
+  padding: 4px 12px;              /* espace intérieur : haut/bas 4px, gauche/droite 12px */
+  border-radius: 999px;           /* coins très arrondis */
+  font-size: 14px;
+  font-weight: bold;
+}
