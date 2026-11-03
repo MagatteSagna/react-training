@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router";
 import courses from "../data/courses";
 import useLearning from "../hooks/useLearning";
@@ -7,6 +8,9 @@ const SCORE_MINIMUM = 60;
 function Certificate() {
   const { id } = useParams();
   const { profil, progression, meilleurScore } = useLearning();
+
+  // La date est calculée une seule fois, à l'ouverture de la page
+  const [dateDelivrance] = useState(() => new Date().toLocaleDateString("fr-FR"));
 
   const cours = courses.find((c) => c.id === Number(id));
 
@@ -19,7 +23,6 @@ function Certificate() {
   const okChapitres = prog === 100;
   const okQuiz = score !== null && score >= SCORE_MINIMUM;
 
-  // Conditions non remplies : on explique ce qui manque
   if (!okChapitres || !okQuiz) {
     return (
       <div className="message">
@@ -44,12 +47,9 @@ function Certificate() {
         <p>a suivi avec succès la formation</p>
         <h3>{cours.titre}</h3>
         <p>Score au quiz : {score}%</p>
-        <p className="certificat-petit">
-          Délivré le {new Date().toLocaleDateString("fr-FR")}
-        </p>
+        <p className="certificat-petit">Délivré le {dateDelivrance}</p>
       </div>
 
-      {/* window.print() ouvre la fenêtre d'impression (enregistrer en PDF possible) */}
       <button className="btn-panier" onClick={() => window.print()}>
         Imprimer / Enregistrer en PDF
       </button>

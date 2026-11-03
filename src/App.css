@@ -924,3 +924,89 @@ body {
     display: none;
   }
 }
+
+/* ===== Responsive (Jour 10) ===== */
+
+/* ===== Responsive (Jour 10) ===== */
+
+/* Tablette et en dessous */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    width: 100%;
+  }
+
+  .header nav a {
+    margin-left: 0;
+  }
+
+  .main {
+    padding: 24px 14px;
+  }
+
+  .quiz,
+  .certificat {
+    max-width: 100%;
+  }
+
+  .certificat {
+    padding: 30px 18px;
+  }
+
+  .certificat h2 {
+    font-size: 26px;
+  }
+}
+
+/* Téléphone */
+@media (max-width: 480px) {
+  .outils-produits input,
+  .outils-produits select {
+    min-width: 100%;
+  }
+
+  .liste-cours {
+    grid-template-columns: 1fr;
+  }
+
+  .question {
+    padding: 12px;
+  }
+
+  .option {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .certificat {
+    border-width: 5px;
+    padding: 24px 12px;
+  }
+
+  .certificat h2 {
+    font-size: 22px;
+  }
+
+  .quiz .bouton-lien,
+  .quiz .bouton-recharger,
+  .quiz .btn-panier,
+  .resultat .bouton-lien,
+  .resultat .bouton-recharger {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    text-align: center;
+  }
+}
