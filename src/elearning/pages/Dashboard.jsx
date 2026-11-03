@@ -63,6 +63,9 @@ function Dashboard() {
                             <Link to={"/elearning/formations/" + c.id + "/apprendre"} className="bouton-lien">
                                 Continuer
                             </Link>
+                            <Link to={"/elearning/formations/" + c.id + "/quiz"} className="bouton-lien">
+                                 Passer le quiz
+                            </Link>
                         </div>
                     );
                 })}

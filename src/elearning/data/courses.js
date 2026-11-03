@@ -123,6 +123,50 @@ const courses = [
       },
     ],
   },
+  {
+    id: 4,
+    titre: "Git et GitHub pour débutants",
+    categorie: "Outils",
+    niveau: "Débutant",
+    duree: "4 heures",
+    description: "Sauvegarde ton code, suis son historique et partage-le avec GitHub.",
+    objectifs: [
+      "Comprendre le rôle de Git et de GitHub",
+      "Enregistrer des modifications avec add et commit",
+      "Envoyer son projet sur GitHub avec push",
+    ],
+    modules: [
+      { id: 1, titre: "Qu'est-ce que Git ?", contenu: "Git est un outil qui garde l'historique de ton projet. GitHub est un site qui héberge ce projet en ligne." },
+      { id: 2, titre: "add et commit", contenu: "git add . prépare les fichiers modifiés, puis git commit -m \"message\" enregistre une version du projet." },
+      { id: 3, titre: "push et pull", contenu: "git push envoie tes commits sur GitHub, git pull récupère les modifications présentes en ligne." },
+      { id: 4, titre: "Les branches", contenu: "Une branche est une copie parallèle du projet pour tester une idée sans casser la version principale." },
+    ],
+    quiz: [
+      {
+        id: 1,
+        question: "Quelle commande enregistre une version du projet ?",
+        options: ["git push", "git commit", "git clone", "git pull"],
+        reponse: 1,
+      },
+      {
+        id: 2,
+        question: "Quelle commande envoie ton code sur GitHub ?",
+        options: ["git add", "git status", "git push", "git init"],
+        reponse: 2,
+      },
+      {
+        id: 3,
+        question: "À quoi sert une branche ?",
+        options: [
+          "Supprimer des fichiers",
+          "Tester une idée sans casser la version principale",
+          "Télécharger un projet",
+          "Changer de mot de passe",
+        ],
+        reponse: 1,
+      },
+    ],
+  },
 ];
 
 export default courses;

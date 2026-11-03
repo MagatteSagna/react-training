@@ -16,6 +16,9 @@ import Courses from "./elearning/pages/Courses";
 import CourseDetails from "./elearning/pages/CourseDetails";
 import Learning from "./elearning/pages/Learning";
 import Dashboard from "./elearning/pages/Dashboard";
+import Quiz from "./elearning/pages/Quiz";
+import Certificate from "./elearning/pages/Certificate";
+import Profile from "./elearning/pages/Profile";
 function App() {
   return (
     <div className="app">
@@ -38,6 +41,9 @@ function App() {
           <Route path="/elearning/formations/:id" element={<CourseDetails />} />
           <Route path="/elearning/formations/:id/apprendre" element={<Learning />} />
           <Route path="/elearning/tableau-de-bord" element={<Dashboard />} />
+          <Route path="/elearning/formations/:id/quiz" element={<Quiz />} />
+          <Route path="/elearning/formations/:id/certificat" element={<Certificate />} />
+          <Route path="/elearning/profil" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

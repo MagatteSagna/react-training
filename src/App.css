@@ -819,3 +819,108 @@ body {
   font-size: 30px;
   color: var(--rouge);
 }
+/* ===== Quiz, certificat (Jour 9, partie 3) ===== */
+.quiz {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.question {
+  margin: 20px 0;
+  padding: 18px;
+  background-color: var(--rose-clair);
+  border: 2px solid var(--rose);
+  border-radius: 14px;
+}
+
+.question h3 {
+  color: var(--rouge);
+  margin-bottom: 12px;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px 14px;
+  text-align: left;
+  background-color: var(--blanc);
+  color: var(--texte);
+  border: 2px solid var(--rose);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.option.choisie {
+  border-color: var(--rouge);
+  background-color: var(--rose-clair);
+}
+
+.option.juste {
+  background-color: var(--rouge);
+  color: var(--blanc);
+  border-color: var(--rouge);
+}
+
+.option.fausse {
+  background-color: var(--blanc);
+  color: var(--rouge-fonce);
+  border: 2px dashed var(--rouge);
+  text-decoration: line-through;
+}
+
+.quiz button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.resultat {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--rose-clair);
+  border: 2px solid var(--rose);
+  border-radius: 14px;
+}
+
+.resultat h3 {
+  color: var(--rouge);
+  margin-bottom: 10px;
+}
+
+.certificat {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 40px 30px;
+  text-align: center;
+  background-color: var(--blanc);
+  border: 8px double var(--rouge);
+  border-radius: 10px;
+}
+
+.certificat h2 {
+  color: var(--rouge);
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.certificat h3 {
+  color: var(--rouge-fonce);
+  margin: 12px 0;
+}
+
+.certificat-petit {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* À l'impression : on masque tout sauf le certificat */
+@media print {
+  .header, .footer, .btn-panier {
+    display: none;
+  }
+}
