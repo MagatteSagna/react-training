@@ -1,6 +1,4 @@
-// Props : la liste à afficher + trois fonctions du parent
 function StudentList({ etudiants, onModifier, onSupprimer, onDetails }) {
-  // Rendu conditionnel : message si la liste est vide
   if (etudiants.length === 0) {
     return <p className="vide">Aucun étudiant à afficher.</p>;
   }
@@ -25,16 +23,19 @@ function StudentList({ etudiants, onModifier, onSupprimer, onDetails }) {
               <td>{e.email}</td>
               <td>{e.formation}</td>
               <td>{e.niveau}</td>
-              <td>{e.statut}</td>
               <td>
-                {/* Nouveau bouton : appelle onDetails avec l'étudiant de cette ligne */}
+                {/* EXERCICE 2 : badge coloré, la classe dépend du statut */}
+                <span className={e.statut === "Actif" ? "statut statut-actif" : "statut statut-inactif"}>
+                  {e.statut}
+                </span>
+              </td>
+              <td>
                 <button onClick={() => onDetails(e)}>Détails</button>
                 <button onClick={() => onModifier(e)}>Modifier</button>
                 <button
                   onClick={() => {
-                    // confirm() demande une confirmation avant de supprimer
-                    if (window.confirm("Supprimer " + e.prenom + " " + e.nom + " ?")) {
-                      onSupprimer(e.id);
+                    if (window.confirm("Déplacer " + e.prenom + " " + e.nom + " vers la corbeille ?")) {
+                      onSupprimer(e.id);   // ← la ligne qui manquait
                     }
                   }}
                 >

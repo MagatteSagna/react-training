@@ -342,3 +342,73 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
+
+/* ===== Statut en couleur (Jour 5, exercice 2) ===== */
+.statut {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.statut-actif {
+  background-color: var(--rouge);
+  color: var(--blanc);
+}
+
+.statut-inactif {
+  background-color: var(--rose-clair);
+  color: var(--rouge-fonce);
+  border: 2px solid var(--rose);
+}
+
+/* ===== Bouton « Tout supprimer » (Jour 5, exercice 3) ===== */
+.bouton-danger {
+  background-color: var(--blanc);
+  color: var(--rouge);
+  border: 2px solid var(--rouge);
+  padding: 8px 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bouton-danger:hover:not(:disabled) {
+  background-color: var(--rouge);
+  color: var(--blanc);
+}
+
+.bouton-danger:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Les 4 contrôles de la barre d'outils passent à la ligne si l'écran est étroit */
+.outils {
+  flex-wrap: wrap;
+}
+
+/* ===== Corbeille ===== */
+.corbeille {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: var(--rose-clair);
+  border: 2px dashed var(--rose);
+  border-radius: 12px;
+}
+
+.bouton-corbeille {
+  background-color: var(--rouge);
+  color: var(--blanc);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bouton-corbeille:hover {
+  background-color: var(--rouge-fonce);
+}
