@@ -19,6 +19,7 @@ function Header() {
         <NavLink to="/panier">
           Panier <span className="compteur">{nbArticles}</span>
         </NavLink>
+        <NavLink to="/elearning">E-learning</NavLink>
       </nav>
     </header>
   );

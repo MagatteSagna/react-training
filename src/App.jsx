@@ -11,6 +11,9 @@ import NotFound from "./pages/NotFound";
 import "./App.css";
 import Favorites from "./pages/Favorites";
 import Cart from "./pages/Cart";
+import ELHome from "./elearning/pages/ELHome";
+import Courses from "./elearning/pages/Courses";
+import CourseDetails from "./elearning/pages/CourseDetails";
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
           {/* path="*" = toute autre URL : page 404 */}
           <Route path="/favoris" element={<Favorites />} />
           <Route path="/panier" element={<Cart />} />
+          <Route path="/elearning" element={<ELHome />} />
+          <Route path="/elearning/formations" element={<Courses />} />
+          <Route path="/elearning/formations/:id" element={<CourseDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
