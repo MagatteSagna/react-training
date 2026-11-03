@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2026 - Projet de stage front-end</p>
+      <p>© 2026 - Projet de front-end</p>
     </footer>
   );
 }
