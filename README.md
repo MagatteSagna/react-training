@@ -14,7 +14,10 @@ Parcours de 2 semaines pour apprendre React.js, de zéro jusqu'à une plateforme
 - [x] Jour 4 : CRUD étudiants, recherche, LocalStorage
 - [x] Jour 5 : finalisation du Mini-projet B
 - [x] Jour 6 : useEffect, fetch, API
-- [ ] Jour 7 : React Router, catalogue et page détail
+- [x] Jour 7 : React Router, catalogue et page
+ détail
+- [x] Jour 8 : Context API, favoris et panier
+
 ## Installation et lancement
 ```bash
 git clone https://github.com/MagatteSagna/react-training.git

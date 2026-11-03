@@ -51,6 +51,11 @@ body {
   text-decoration: underline;
 }
 
+.header nav a.active {
+  border-bottom: 3px solid var(--blanc);
+  padding-bottom: 4px;
+}
+
 /* ===== Contenu principal ===== */
 .main {
   flex: 1;
@@ -241,6 +246,7 @@ body {
 
 .outils {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   max-width: 700px;
   margin: 20px auto 10px;
@@ -343,7 +349,7 @@ body {
   font-weight: bold;
 }
 
-/* ===== Statut en couleur (Jour 5, exercice 2) ===== */
+/* ===== Statut en couleur (Jour 5) ===== */
 .statut {
   display: inline-block;
   padding: 3px 12px;
@@ -363,7 +369,7 @@ body {
   border: 2px solid var(--rose);
 }
 
-/* ===== Bouton « Tout supprimer » (Jour 5, exercice 3) ===== */
+/* ===== Bouton « Tout supprimer » (Jour 5) ===== */
 .bouton-danger {
   background-color: var(--blanc);
   color: var(--rouge);
@@ -385,12 +391,7 @@ body {
   cursor: not-allowed;
 }
 
-/* Les 4 contrôles de la barre d'outils passent à la ligne si l'écran est étroit */
-.outils {
-  flex-wrap: wrap;
-}
-
-/* ===== Corbeille ===== */
+/* ===== Corbeille (Jour 5) ===== */
 .corbeille {
   margin-top: 30px;
   padding: 15px;
@@ -413,7 +414,7 @@ body {
   background-color: var(--rouge-fonce);
 }
 
-/* ===== Produits depuis l'API (Jour 6) ===== */
+/* ===== Produits (Jours 6 et 8) ===== */
 .liste-produits {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -423,17 +424,32 @@ body {
 }
 
 .produit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   /* pousse les boutons en bas de la carte */
   background-color: var(--blanc);
   border: 2px solid var(--rose);
   border-radius: 12px;
   padding: 15px;
   text-align: center;
+  transition: transform 0.2s;
+}
+
+.produit:hover {
+  transform: translateY(-4px);
+  border-color: var(--rouge);
+}
+
+.produit-lien {
+  display: block;          /* le lien prend toute la largeur de la carte */
+  text-decoration: none;
+  color: inherit;
 }
 
 .produit img {
   width: 100%;
   height: 180px;
-  object-fit: contain;   /* l'image garde ses proportions */
+  object-fit: contain;
   background-color: var(--blanc);
   margin-bottom: 10px;
 }
@@ -456,6 +472,12 @@ body {
   margin-top: 6px;
 }
 
+.note {
+  font-size: 14px;
+  color: var(--rouge);
+  margin-top: 4px;
+}
+
 .message {
   margin: 20px auto;
   padding: 15px;
@@ -466,7 +488,7 @@ body {
   font-weight: bold;
 }
 
-/* ===== Recherche et filtre des produits (Jour 6, section 10) ===== */
+/* ===== Recherche et filtre des produits (Jour 6) ===== */
 .outils-produits {
   display: flex;
   gap: 10px;
@@ -487,12 +509,6 @@ body {
   text-transform: capitalize;
 }
 
-.note {
-  font-size: 14px;
-  color: var(--rouge);
-  margin-top: 4px;
-}
-
 .bouton-recharger {
   margin-top: 10px;
   background-color: var(--rouge);
@@ -509,11 +525,6 @@ body {
 }
 
 /* ===== Navigation et pages (Jour 7) ===== */
-.header nav a.active {
-  border-bottom: 3px solid var(--blanc);
-  padding-bottom: 4px;
-}
-
 .bouton-lien {
   display: inline-block;
   background-color: var(--rouge);
@@ -530,21 +541,6 @@ body {
 
 .accueil-lien {
   margin-top: 20px;
-}
-
-.produit-lien {
-  text-decoration: none;
-  color: inherit;
-}
-
-.produit-lien .produit {
-  height: 100%;
-  transition: transform 0.2s;
-}
-
-.produit-lien:hover .produit {
-  transform: translateY(-4px);
-  border-color: var(--rouge);
 }
 
 .detail-produit {
@@ -567,4 +563,67 @@ body {
 
 .detail-produit p {
   margin-bottom: 8px;
+}
+
+/* ===== Favoris et panier (Jour 8) ===== */
+.compteur {
+  display: inline-block;
+  min-width: 22px;
+  padding: 1px 7px;
+  margin-left: 4px;
+  background-color: var(--blanc);
+  color: var(--rouge);
+  border-radius: 999px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.produit-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn-coeur {
+  background-color: var(--blanc);
+  color: var(--rouge);
+  border: 2px solid var(--rouge);
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-coeur.actif {
+  background-color: var(--rouge);
+  color: var(--blanc);
+}
+
+.btn-panier {
+  background-color: var(--rouge);
+  color: var(--blanc);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-panier:hover {
+  background-color: var(--rouge-fonce);
+}
+
+.quantite {
+  display: inline-block;
+  min-width: 30px;
+  font-weight: bold;
+}
+
+.total {
+  margin: 20px 0 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--rouge);
 }

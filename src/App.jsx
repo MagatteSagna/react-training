@@ -9,6 +9,8 @@ import Tasks from "./pages/Tasks";
 import Exercices from "./pages/Exercices";
 import NotFound from "./pages/NotFound";
 import "./App.css";
+import Favorites from "./pages/Favorites";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/taches" element={<Tasks />} />
           <Route path="/exercices" element={<Exercices />} />
           {/* path="*" = toute autre URL : page 404 */}
+          <Route path="/favoris" element={<Favorites />} />
+          <Route path="/panier" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
