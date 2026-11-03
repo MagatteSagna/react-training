@@ -1,0 +1,181 @@
+[
+  {
+    "id": 1,
+    "title": "Apple_Watch",
+    "price": 90000,
+    "devise": "FCFA",
+    "category": "Electronique",
+    "image": "/images/Apple_Watch.jpg",
+    "rating": { "rate": 4.8, "count": 32 }
+  },
+  {
+    "id": 2,
+    "title": "box_cadeaux_fille",
+    "price": 18500,
+    "devise": "FCFA",
+    "category": "box",
+    "image": "/images/box_cadeaux_fille.jpg",
+    "rating": { "rate": 4.5, "count": 18 }
+  },
+  {
+    "id": 3,
+    "title": "box_hermes",
+    "price": 30000,
+    "devise": "FCFA",
+    "category": "box",
+    "image": "/images/box_hermes.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 4,
+    "title": "bracelet_lys",
+    "price": 150000,
+    "devise": "FCFA",
+    "category": "accessoires",
+    "image": "/images/bracelet_lys.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 5,
+    "title": "Chemise",
+    "price": 5000,
+    "devise": "FCFA",
+    "category": "vetement",
+    "image": "/images/Chemise.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 6,
+    "title": "Deodorant_dove",
+    "price": 3000,
+    "devise": "FCFA",
+    "category": "parfums",
+    "image": "/images/Deodorant_dove.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 7,
+    "title": "Iphone_18_promax",
+    "price": 1200000,
+    "devise": "FCFA",
+    "category": "Electronique",
+    "image": "/images/Iphone_18promax.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 8,
+    "title": "Mac_Book_Air",
+    "price": 500000,
+    "devise": "FCFA",
+    "category": "Electronique",
+    "image": "/images/Mac_Book_Air.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 9,
+    "title": "Osmo_pocket_4",
+    "price": 350000,
+    "devise": "FCFA",
+    "category": "Electronique",
+    "image": "/images/Osmo_pocket_4.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 10,
+    "title": "pink coach shoes",
+    "price": 500000,
+    "devise": "FCFA",
+    "category": "Chaussures",
+    "image": "/images/pink_coach_shoes.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 11,
+    "title": "Parfum Eclaire de Latafa",
+    "price": 25000,
+    "devise": "FCFA",
+    "category": "parfums",
+    "image": "/images/Parfum_Eclaire_de_latafa.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 12,
+    "title": "Parfum Maison Francis",
+    "price": 200000,
+    "devise": "FCFA",
+    "category": "parfums",
+    "image": "/images/parfum_Maison_Francis.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 13,
+    "title": "Parfum Mashmallow BLush",
+    "price": 25000,
+    "devise": "FCFA",
+    "category": "parfums",
+    "image": "/images/Parfum_mashmallow_blush.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 14,
+    "title": "Parfum Valentino",
+    "price": 100000,
+    "devise": "FCFA",
+    "category": "parfums",
+    "image": "/images/Parfum_Valentino.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },{
+    "id": 15,
+    "title": "Sac Michael",
+    "price": 20000,
+    "devise": "FCFA",
+    "category": "sac",
+    "image": "/images/sac_michael.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },{
+    "id": 16,
+    "title": "Chaussure ALAIA",
+    "price": 10000,
+    "devise": "FCFA",
+    "category": "Chaussures",
+    "image": "/images/shoes_ALAIA.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },{
+    "id": 17,
+    "title": "Nike Air",
+    "price": 25000,
+    "devise": "FCFA",
+    "category": "Chaussures",
+    "image": "/images/shoes_nike.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 18,
+    "title": "Pyjamas",
+    "price": 10000,
+    "devise": "FCFA",
+    "category": "vetement",
+    "image": "/images/Pyjamas.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 19,
+    "title": "Top basic",
+    "price": 2000,
+    "devise": "FCFA",
+    "category": "vetement",
+    "image": "/images/Top_basic.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  },
+  {
+    "id": 20,
+    "title": "Short Moleton",
+    "price": 3000,
+    "devise": "FCFA",
+    "category": "vetement",
+    "image": "/images/short_Moleton.jpg",
+    "rating": { "rate": 4.9, "count": 54 }
+  }
+
+
+]

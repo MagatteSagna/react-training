@@ -5,6 +5,7 @@ import ContactForm from "./ContactForm";
 import TaskManager from "./TaskManager";
 import StudentManager from "./StudentManager";
 import students from "../data/students";
+import ProductList from "./ProductList";
 
 function Main() {
   return (
@@ -38,6 +39,10 @@ function Main() {
 
       {/* Mini-projet B (son titre est dans le component) */}
       <StudentManager />
+
+      {/* Jour 6 : données depuis une API */}
+      <h2 className="titre-section">Produits (depuis une API)</h2>
+      <ProductList />
 
       {/* Exercices du Jour 3 */}
       <h2 className="titre-section">Exercices</h2>

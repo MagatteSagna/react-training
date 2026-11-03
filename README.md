@@ -13,7 +13,7 @@ Parcours de 2 semaines pour apprendre React.js, de zéro jusqu'à une plateforme
 - [x] Jour 3 : useState, formulaires, gestionnaire de tâches
 - [x] Jour 4 : CRUD étudiants, recherche, LocalStorage
 - [x] Jour 5 : finalisation du Mini-projet B
-
+- [ ] Jour 6 : useEffect, fetch, API
 ## Installation et lancement
 ```bash
 git clone https://github.com/MagatteSagna/react-training.git
