@@ -83,6 +83,11 @@ function LearningProvider({ children }) {
     setScores({});
   }
 
+  // Nombre de chapitres terminés pour une formation
+  function nbTermines(idCours) {
+    return (termines[idCours] || []).length;
+  }
+
   const valeur = {
     inscrits,
     profil,
@@ -92,6 +97,7 @@ function LearningProvider({ children }) {
     estTermine,
     basculerModule,
     progression,
+    nbTermines,
     enregistrerScore,
     meilleurScore,
     modifierProfil,

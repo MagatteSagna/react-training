@@ -705,3 +705,117 @@ body {
   font-weight: bold;
   color: var(--rouge-fonce);
 }
+
+/* ===== Apprentissage et tableau de bord (Jour 9, partie 2) ===== */
+.el-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.el-nav a {
+  padding: 8px 16px;
+  background-color: var(--rose-clair);
+  color: var(--rouge-fonce);
+  border: 2px solid var(--rose);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.el-nav a.active {
+  background-color: var(--rouge);
+  color: var(--blanc);
+  border-color: var(--rouge);
+}
+
+.apprentissage {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.apprentissage-corps {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.chapitres {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chapitre {
+  text-align: left;
+  padding: 10px 12px;
+  background-color: var(--blanc);
+  color: var(--texte);
+  border: 2px solid var(--rose);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chapitre.actif {
+  background-color: var(--rouge);
+  color: var(--blanc);
+  border-color: var(--rouge);
+}
+
+.contenu-chapitre {
+  flex: 3 1 400px;
+  padding: 20px;
+  background-color: var(--rose-clair);
+  border: 2px solid var(--rose);
+  border-radius: 14px;
+}
+
+.contenu-chapitre h3 {
+  color: var(--rouge);
+  margin: 6px 0 10px;
+}
+
+.contenu-chapitre p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.navigation-chapitres {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation-chapitres button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  padding: 18px;
+  background-color: var(--rose-clair);
+  border: 2px solid var(--rose);
+  border-radius: 14px;
+}
+
+.stat strong {
+  font-size: 30px;
+  color: var(--rouge);
+}

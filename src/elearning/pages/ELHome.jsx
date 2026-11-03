@@ -1,13 +1,14 @@
 import { Link } from "react-router";
 import courses from "../data/courses";
 import CourseCard from "../components/CourseCard";
+import ELNav from "../components/ELNav";
 
 function ELHome() {
-  // slice(0, 2) = les 2 premières formations, mises en avant
   const misesEnAvant = courses.slice(0, 2);
 
   return (
     <div>
+      <ELNav />
       <h2>Plateforme e-learning</h2>
       <p>Apprends à ton rythme, suis ta progression et obtiens ton certificat.</p>
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import courses from "../data/courses";
 import CourseCard from "../components/CourseCard";
+import ELNav from "../components/ELNav";
 
 function Courses() {
   const [recherche, setRecherche] = useState("");
@@ -20,6 +21,7 @@ function Courses() {
 
   return (
     <div>
+      <ELNav />
       <h2>Toutes les formations</h2>
 
       <div className="outils-produits">

@@ -14,7 +14,8 @@ import Cart from "./pages/Cart";
 import ELHome from "./elearning/pages/ELHome";
 import Courses from "./elearning/pages/Courses";
 import CourseDetails from "./elearning/pages/CourseDetails";
-
+import Learning from "./elearning/pages/Learning";
+import Dashboard from "./elearning/pages/Dashboard";
 function App() {
   return (
     <div className="app">
@@ -35,6 +36,8 @@ function App() {
           <Route path="/elearning" element={<ELHome />} />
           <Route path="/elearning/formations" element={<Courses />} />
           <Route path="/elearning/formations/:id" element={<CourseDetails />} />
+          <Route path="/elearning/formations/:id/apprendre" element={<Learning />} />
+          <Route path="/elearning/tableau-de-bord" element={<Dashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
